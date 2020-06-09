@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div>
+            <div class="row">
+                <div class="col">
+                    <input type="range" min="1" max="10" value="5" class="slider" id="rangeRealCluster" onChange="updateText('Real number of clusters', this.value)">
+                    <output type="text" id="Real number of clusters" value="">
+                </div>
+                <div class="col">
+                    <input type="range" min="1" max="10" value="5" class="slider" id="rangeK" onChange="updateText('K', this.value)">
+                    <output type="text" id="K" value="">
+                </div>
+                <div class="col">
+                    <input type="range" min="1" max="300" value="150" class="slider" id="rangeSparseness" onChange="updateText('Sparseness', this.value)">
+                    <output type="text" id="Sparseness" value="">
+                </div>
+                <div class="col">
+                    <input type="range" min="1" max="30" value="10" class="slider" id="rangePointsPerCluster" onChange="updateText('Points per cluster', this.value)">
+                    <output type="text" id="Points per cluster" value="">
+                </div>
+            </div>
+            <div>
+                <button id="button" onclick="executeStep()">generate</button>
+            </div>
+        <div>
+            <canvas id="canvas" width="900" height="900"></canvas>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+div {
+    text-align: center;
+    margin-bottom: 5px;
+    min-width: 500px;
+}
+
+.row {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.col {
+    display: table-cell;
+}
+
+button {
+    color: black;
+    min-width: 80px;
+}
+
+canvas {
+    border: 1px solid black;
+}
